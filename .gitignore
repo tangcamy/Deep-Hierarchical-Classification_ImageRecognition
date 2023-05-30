@@ -1,8 +1,12 @@
 
 
 dataset/images/**
+dataset/pickle_files/cifar-100-python.zip
+dataset/pickle_files/cifar-100-python
 dataset/pickle_files/train
 dataset/pickle_files/test
+dataset/pickle_files/meta
+dataset/model_save.pth
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -30,6 +34,7 @@ share/python-wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.pth
 MANIFEST
 
 # PyInstaller

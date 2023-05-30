@@ -11,7 +11,7 @@ import torch
 print(torch.__version__)
 print('Torch Cuda:',torch.cuda.is_available())
 print('Torch Cuda Device counts:',torch.cuda.device_count())
-current = 'D:/project/Deep_Hierarchical_Classification-main/'
+current = '/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/'
 os.chdir(current)
 # In[步驟]
 '''
@@ -162,12 +162,12 @@ for epoch_idx in range(args.epoch):
     print(f'Testing Subclass accuracy at epoch {epoch_idx} : {sum(epoch_subclass_accuracy)/(j+1)}')
     print('-------------------------------------------------------------------------------------------')
 
-    torch.save(model.state_dict(), args.model_save_path+'model_save.pth')
+    torch.save(model.state_dict(), args.model_save_path+'.pth')
     print("Model saved!")
     
     
     
-    #---- picture acc 
+    #---- picture acc -----# plot error
     print('starte picture for acc')
     path=args.graphs_folder, 
     num_epoch=epoch_idx, 
@@ -194,13 +194,13 @@ for epoch_idx in range(args.epoch):
     sns.lineplot(data=data_superclass.reset_index(inplace=False), x='Epochs', y='Accuracy', hue='Mode')
     plt.title('Superclass Accuracy Graph')
     plt.savefig(path[0]+f'accuracy_superclass_epoch.png')
-    plt.show() 
+    #plt.show() 
     plt.clf()
     
     sns.lineplot(data=data_subclass.reset_index(inplace=False), x='Epochs', y='Accuracy', hue='Mode')
     plt.title('Subclass Accuracy Graph')
     plt.savefig(path[0]+f'accuracy_subclass_epoch.png')
-    plt.show()
+    #plt.show()
     plt.clf()
     
     
@@ -213,7 +213,7 @@ for epoch_idx in range(args.epoch):
     sns.lineplot(data=train_test_loss.reset_index(inplace=False), x='Epochs', y='Loss', hue='Mode')
     plt.title('Loss Graph')
     plt.savefig(path[0]+f'loss_epoch.png')
-    plt.show()
+    #plt.show()
     plt.clf()
     print('picture save done  start next epoch')
 

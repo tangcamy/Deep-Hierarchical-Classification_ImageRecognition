@@ -16,8 +16,8 @@ class Preprocess_Cifar100:
     '''
 
 
-    def __init__(self, meta_filename='D:/project/Deep_Hierarchical_Classification-main/dataset/pickle_files/meta', train_file='D:/project/Deep_Hierarchical_Classification-main/dataset/pickle_files/train', test_file='D:/project/Deep_Hierarchical_Classification-main/dataset/pickle_files/test',
-                        image_write_dir='D:/project/Deep_Hierarchical_Classification-main/dataset/images/', csv_write_dir='D:/project/Deep_Hierarchical_Classification-main/dataset/', train_csv_filename='train.csv', test_csv_filename='test.csv'):
+    def __init__(self, meta_filename='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/meta', train_file='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/train', test_file='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/test',
+                        image_write_dir='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/images/', csv_write_dir='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/', train_csv_filename='train.csv', test_csv_filename='test.csv'):
         '''Init params.
         '''
         self.meta_filename = meta_filename
@@ -87,8 +87,8 @@ class Preprocess_Cifar100:
 
 
 p = Preprocess_Cifar100()
-p.process_data(train=True) #process the training set
-print('train download ok')
+#p.process_data(train=True) #process the training set
+#print('train download ok')
 
-#p.process_data(train=False) #process the testing set
-#print('test download ok')
+p.process_data(train=False) #process the testing set
+print('test download ok')
