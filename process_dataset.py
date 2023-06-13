@@ -11,11 +11,9 @@ from tqdm import tqdm
 from helper import unpickle, read_meta
 
 
-class Preprocess_Cifar100:
+class Preprocess:
     '''Process the pickle files.
     '''
-
-
     def __init__(self, meta_filename='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/meta', train_file='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/train', test_file='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/test',
                         image_write_dir='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/images/', csv_write_dir='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/', train_csv_filename='train.csv', test_csv_filename='test.csv'):
         '''Init params.
@@ -49,11 +47,11 @@ class Preprocess_Cifar100:
         else:
             pickle_file = unpickle(self.test_file)
 
-        filenames = [t.decode('utf8') for t in pickle_file[b'filenames']]
-        fine_labels = pickle_file[b'fine_labels']
-        coarse_labels = pickle_file[b'coarse_labels']
-        data = pickle_file[b'data']
-
+        filenames = pickle_file['filenames']#[t.decode('utf8') for t in pickle_file[b'filenames']]
+        fine_labels = pickle_file['fine_labels']#pickle_file[b'fine_labels']
+        coarse_labels = pickle_file['coarse_labels']#pickle_file[b'coarse_labels']
+        #data = pickle_file[b'data']
+        '''
         images = []
         for d in data:
             image = np.zeros((32,32,3), dtype=np.uint8)
@@ -61,6 +59,7 @@ class Preprocess_Cifar100:
             image[:,:,1] = np.reshape(d[1024:2048], (32,32))
             image[:,:,2] = np.reshape(d[2048:], (32,32))
             images.append(image)
+        '''
 
         if train:
             csv_filename = self.train_csv_filename
@@ -68,21 +67,24 @@ class Preprocess_Cifar100:
             csv_filename = self.test_csv_filename
         c=0
         with open(f'{self.csv_write_dir}/{csv_filename}', 'w+') as f:
-            for i, image in enumerate(images):
+            for i, image in enumerate(filenames):
                 filename = filenames[i]
                 coarse_label = self.coarse_label_names[coarse_labels[i]]
                 fine_label = self.fine_label_names[fine_labels[i]]
-                imageio.imsave(f'{self.image_write_dir}{filename}', image)
+                #imageio.imsave(f'{self.image_write_dir}{filename}', image)
                 c=c+1
-                print('count:'+str(c))
+                #print('count:'+str(c))
                 print(f'{self.image_write_dir}{filename}')
                 f.write(f'{self.image_write_dir}{filename}, {coarse_label}, {fine_label}\n')
 
 
 
-p = Preprocess_Cifar100()
+p = Preprocess()
+
+##-----train-----##
 #p.process_data(train=True) #process the training set
 #print('train download ok')
 
+##-----test-----##
 p.process_data(train=False) #process the testing set
 print('test download ok')

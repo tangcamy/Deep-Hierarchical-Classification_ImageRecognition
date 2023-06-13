@@ -19,7 +19,8 @@ class HierarchicalLossNetwork:
         self.beta = beta
         self.p_loss = p_loss
         self.device = device
-        self.level_one_labels, self.level_two_labels = read_meta(metafile=metafile_path)
+        #self.level_one_labels, self.level_two_labels = read_meta(metafile=metafile_path)
+        self.level_one_labels, self.level_two_labels = read_meta(metafile_path)
         self.hierarchical_labels = hierarchical_labels
         self.numeric_hierarchy = self.words_to_indices()
 

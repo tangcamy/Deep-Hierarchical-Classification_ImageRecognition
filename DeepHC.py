@@ -16,7 +16,8 @@ os.chdir(current)
 # In[步驟]
 '''
 #1. 先到如下檔案下載照片- 需至檔案輪流註解 Test/Train
-!python process_cifar100.py
+!python process_cifar100.py  /// for cifar100.py
+!python process_dataset.py   /// for customer dataset cleaner.
 '''
 
 # In[train.py]
@@ -52,6 +53,7 @@ train_dataset = LoadDataset(image_size=args.img_size, image_depth=args.img_depth
                                 transforms.RandomPerspective(distortion_scale=0.2),
                                 transforms.ColorJitter(brightness=0.5, contrast=0.5, saturation=0.5),
                                  transforms.ToTensor()]))
+
 test_dataset = LoadDataset(image_size=args.img_size, image_depth=args.img_depth, csv_path=args.test_csv,
                             cifar_metafile=args.metafile, transform=transforms.ToTensor())
 
@@ -60,8 +62,12 @@ print('test_dataset:'+str(len(test_dataset)))
 
 
 #----- generator
-train_generator = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=args.no_shuffle, num_workers=args.num_workers)
-test_generator = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=args.no_shuffle, num_workers=args.num_workers)
+#train_generator = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=args.no_shuffle, num_workers=args.num_workers)
+#test_generator = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=args.no_shuffle, num_workers=args.num_workers)
+
+
+train_generator = DataLoader(train_dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
+test_generator = DataLoader(test_dataset, batch_size=args.batch_size, shuffle=True, num_workers=args.num_workers)
 
 model = resnet50.ResNet50()
 optimizer = Adam(model.parameters(), lr=args.learning_rate)
@@ -90,8 +96,6 @@ for epoch_idx in range(args.epoch):
 
     model.train()
     for i, sample in tqdm(enumerate(train_generator)):
-
-
         batch_x, batch_y1, batch_y2 = sample['image'].to(device), sample['label_1'].to(device), sample['label_2'].to(device)
         optimizer.zero_grad()
 
@@ -162,7 +166,7 @@ for epoch_idx in range(args.epoch):
     print(f'Testing Subclass accuracy at epoch {epoch_idx} : {sum(epoch_subclass_accuracy)/(j+1)}')
     print('-------------------------------------------------------------------------------------------')
 
-    torch.save(model.state_dict(), args.model_save_path+'.pth')
+    torch.save(model.state_dict(), args.model_save_path+'FMA.pth')
     print("Model saved!")
     
     

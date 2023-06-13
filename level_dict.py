@@ -1,6 +1,16 @@
 '''Dictionary for CIFAR-100 hierarchy.
 '''
 
+
+hierarchy = {
+    'NP':['CF REPAIR FAIL','PV-HOLE-T','CF DEFECT','CF PS DEFORMATION','AS-RESIDUE-E','ITO-RESIDUE-T','M1-ABNORMAL'],
+    'OP':['POLYMER','FIBER','GLASS CULLET','POLYMER'],
+    'UP':['PI SPOT-WITH PAR','LIGHT METAL','FIBER','PI SPOT-WITH PAR','POLYMER'],
+    'INT' : ['GLASS BROKEN','ESD']
+}
+
+'''
+
 hierarchy = {
     'aquatic_mammals':['beaver', 'dolphin', 'otter', 'seal', 'whale'],
     'fish':	['aquarium_fish', 'flatfish', 'ray', 'shark', 'trout'],
@@ -23,3 +33,4 @@ hierarchy = {
     'vehicles_1':['bicycle', 'bus', 'motorcycle', 'pickup_truck', 'train'],
     'vehicles_2': ['lawn_mower', 'rocket', 'streetcar', 'tank', 'tractor']
 }
+'''
