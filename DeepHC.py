@@ -45,6 +45,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == '
 
 if not os.path.exists(args.graphs_folder) : os.makedirs(args.graphs_folder)
 
+print('image_size:'+str(args.img_size))
 
 #----- dataset
 train_dataset = LoadDataset(image_size=args.img_size, image_depth=args.img_depth, csv_path=args.train_csv,
@@ -131,6 +132,7 @@ for epoch_idx in range(args.epoch):
 
     model.eval()
     with torch.set_grad_enabled(False):
+        #enumerate(建立批次迴圈計算時間)
         for j, sample in tqdm(enumerate(test_generator)):
 
 
@@ -167,6 +169,7 @@ for epoch_idx in range(args.epoch):
     print('-------------------------------------------------------------------------------------------')
 
     torch.save(model.state_dict(), args.model_save_path+'FMA.pth')
+    torch.save(model.state_dict(), args.model_save_path+'FMA.pt')
     print("Model saved!")
     
     

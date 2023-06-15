@@ -72,8 +72,8 @@ class LoadDataset(Dataset):
             image = cv2.imread(image_path)
             image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 
-        if self.image_size != 32:
-            cv2.resize(image, (self.image_size, self.image_size))
+        #if self.image_size != 32:
+         #   cv2.resize(image, (self.image_size, self.image_size))
 
 
         image = Image.fromarray(image)

@@ -37,7 +37,7 @@ class BottleNeck(nn.Module):
             self.cbam = CBAM(channel_in=out_channels*expansion)
 
 
-    def forward(self, x):
+    def forward(self, x):#x:input_batch
         '''Forward Propagation.
         '''
 
@@ -75,13 +75,13 @@ class ResNet50(nn.Module):
                                             nn.BatchNorm2d(self.in_channels),
                                             nn.ReLU(inplace=True))
         #stride 步長：提取各軸下個元數時，需要跳過的元素數量
-        self.layer1 = self.make_layer(out_channels=64, num_blocks=self.num_blocks[0], stride=1, use_cbam=use_cbam)
+        self.layer1 = self.make_layer(out_channels =64, num_blocks=self.num_blocks[0], stride=1, use_cbam=use_cbam)
         self.layer2 = self.make_layer(out_channels=128, num_blocks=self.num_blocks[1], stride=2, use_cbam=use_cbam)
         self.layer3 = self.make_layer(out_channels=256, num_blocks=self.num_blocks[2], stride=1, use_cbam=use_cbam)
         self.layer4 = self.make_layer(out_channels=512, num_blocks=self.num_blocks[3], stride=2, use_cbam=use_cbam)
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
 
-        self.linear_lvl1 = nn.Linear(512*self.expansion, num_classes[0])
+        self.linear_lvl1 = nn.Linear(512*self.expansion, num_classes[0]) #線性flatten輸出
         self.linear_lvl2 = nn.Linear(512*self.expansion, num_classes[1])
 
         self.softmax_reg1 = nn.Linear(num_classes[0], num_classes[0])
@@ -100,7 +100,7 @@ class ResNet50(nn.Module):
         return nn.Sequential(*layers)
 
 
-    def forward(self, x): #__call__
+    def forward(self, x): #__call__ #x:input_batch
         '''Forward propagation of ResNet-50.
         '''
 
@@ -110,9 +110,9 @@ class ResNet50(nn.Module):
         x = self.layer3(x)
         x_conv = self.layer4(x)
         x = self.avgpool(x_conv)
-        x = nn.Flatten()(x) #flatten the feature maps.
+        x = nn.Flatten()(x) #flatten the feature maps.卷積資料攤平
 
-        level_1 = self.softmax_reg1(self.linear_lvl1(x))
+        level_1 = self.softmax_reg1(self.linear_lvl1(x)) # 經過softxmax處理後的模型輸出（機率值）
         level_2 = self.softmax_reg2(torch.cat((level_1, self.linear_lvl2(x)), dim=1))
 
 

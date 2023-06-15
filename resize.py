@@ -1,6 +1,6 @@
 import cv2
 import os 
-image_size =32
+image_size =224
 
 image_root ='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/images/'
 os.chdir(image_root)
