@@ -11,6 +11,11 @@ dataset/pickle_files/test
 dataset/pickle_files/meta
 dataset/model_save.pth
 
+dataset/dataPickle_Transform/**
+dataPickle_Transform/pickel_files/**
+dataPickle_Transform/preimages/train/**
+dataPickle_Transform/preimages/**
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

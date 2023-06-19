@@ -9,12 +9,16 @@ import shutil
 
 rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/20_BL/'
 
-projectroot = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/'
+projectroot = '/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/'
 root = projectroot+'dataPickle_Transform/'
 pickle_root = root + 'pickel_files/'
 pickleDataset_root = root + 'preimages/'
 pickleTrain_root = pickleDataset_root + 'train/'
 pickleTest_root = pickleDataset_root + 'test/'
+
+'''
+data save: 
+'''
 
 # In[0] create root
 def makedirs(path):

@@ -63,14 +63,14 @@ class HierarchicalLossNetwork:
         dloss = 0
         for l in range(1, self.total_level):
 
-            current_lvl_pred = torch.argmax(nn.Softmax(dim=1)(predictions[l]), dim=1)
-            prev_lvl_pred = torch.argmax(nn.Softmax(dim=1)(predictions[l-1]), dim=1)
+            current_lvl_pred = torch.argmax(nn.Softmax(dim=1)(predictions[l]), dim=1)#subClass_pred
+            prev_lvl_pred = torch.argmax(nn.Softmax(dim=1)(predictions[l-1]), dim=1)#superClass_pred
 
             D_l = self.check_hierarchy(current_lvl_pred, prev_lvl_pred)
-
+            #--torch.FloatTensor // float32 dtype
             l_prev = torch.where(prev_lvl_pred == true_labels[l-1], torch.FloatTensor([0]).to(self.device), torch.FloatTensor([1]).to(self.device))
             l_curr = torch.where(current_lvl_pred == true_labels[l], torch.FloatTensor([0]).to(self.device), torch.FloatTensor([1]).to(self.device))
-
+            #--torch.pow(input,exp_value)=input*exp_value 
             dloss += torch.sum(torch.pow(self.p_loss, D_l*l_prev)*torch.pow(self.p_loss, D_l*l_curr) - 1)
 
         return self.beta * dloss
