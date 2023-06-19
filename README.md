@@ -1,5 +1,7 @@
-﻿# Deep Hierarchical Classification
+﻿# Deep Level
+This branch is Level_3.
 
+# Deep Hierarchical Classification
 This is a non-official implementation of [Deep Hierarchical Classification for Category Prediction in E-commerce System][1]. 
 The github form : [Github - Ugenteraan Manogaran][2]
 
