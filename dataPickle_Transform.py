@@ -5,7 +5,9 @@ import pickle
 import shutil
 
 # 注意：使用 pickle 的時候，檔名不可以命名成 pickle.py 
-
+'''
+data root
+'''
 
 rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/20_BL/'
 

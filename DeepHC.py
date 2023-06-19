@@ -140,8 +140,8 @@ for epoch_idx in range(args.epoch):
 
             superclass_pred,subclass_pred = model(batch_x)
             prediction = [superclass_pred,subclass_pred]
-            dloss = HLN.calculate_dloss(prediction, [batch_y1, batch_y2])
-            lloss = HLN.calculate_lloss(prediction, [batch_y1, batch_y2])
+            dloss = HLN.calculate_dloss(prediction, [batch_y1, batch_y2])#depeense loss
+            lloss = HLN.calculate_lloss(prediction, [batch_y1, batch_y2])#loss
 
             total_loss = lloss + dloss
 

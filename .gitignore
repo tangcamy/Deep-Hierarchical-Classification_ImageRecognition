@@ -1,8 +1,8 @@
 
 
 dataset/**
-dataset/images/**
 dataset/images_cifar/**
+dataset/images/**
 dataset/pickle_files/**
 dataset/pickle_files/cifar-100-python.zip
 dataset/pickle_files/cifar-100-python

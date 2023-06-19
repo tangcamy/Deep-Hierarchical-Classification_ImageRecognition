@@ -1,5 +1,4 @@
-'''Dictionary for CIFAR-100 hierarchy.
-'''
+
 
 
 hierarchy = {
@@ -9,8 +8,11 @@ hierarchy = {
     'INT' : ['GLASS BROKEN','ESD']
 }
 
+
+'''Dictionary for CIFAR-100 hierarchy.
 '''
 
+'''
 hierarchy = {
     'aquatic_mammals':['beaver', 'dolphin', 'otter', 'seal', 'whale'],
     'fish':	['aquarium_fish', 'flatfish', 'ray', 'shark', 'trout'],
