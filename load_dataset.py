@@ -30,6 +30,7 @@ class LoadDataset(Dataset):
         self.transform = transform
         self.data_list = self.csv_to_list()
         self.coarse_labels, self.fine_labels = read_meta(self.meta_filename)
+        self.image_name_list = self.data_to_imagename()
 
         #check if the hierarchy dictionary is consistent with the csv file
         for k,v in hierarchy.items():
@@ -42,15 +43,21 @@ class LoadDataset(Dataset):
 
 
     def csv_to_list(self):
-        '''Reads the path of the file and its corresponding label
+        '''Reads the path of the file and its corresponding label 
         '''
 
         with open(self.csv_path, newline='') as f:
             reader = csv.reader(f)
             data = list(reader)
-
         return data
 
+    def data_to_imagename(self):
+        '''Reads csv_to_list , data for imagename'''
+        imagelist=[]
+        for i in self.data_list:
+            imgsname = i[0]
+            imagelist.append(imgsname)
+        return imagelist
 
     def __len__(self):
         '''Returns the total amount of data.
@@ -85,10 +92,11 @@ class LoadDataset(Dataset):
             return {
                 'image':image/255.0,
                 'label_1': self.coarse_labels.index(superclass.strip(' ')),
-                'label_2': self.fine_labels.index(subclass.strip(' '))
+                'label_2': self.fine_labels.index(subclass.strip(' ')),
+                'image_path':image_path
             }
         else:
             return {
-                'image':image
+                'image':image/255.0,
             }
 

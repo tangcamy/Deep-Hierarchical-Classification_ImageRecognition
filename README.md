@@ -29,6 +29,7 @@ The github form : [Github - Ugenteraan Manogaran][2]
 5. model/resnet50.py ：num_classes類別數量需要修改。(coarse_label_names個數 & fine_label_names個數)
 6. resize.py : 照片 resize 。
 7. DeepHC.py ：模型訓練。
+8. detect.py :  Inference。
 
 
 [1]: https://arxiv.org/pdf/2005.06692.pdf "Deep Hierarchical Classification for Category Prediction in E-commerce System"
