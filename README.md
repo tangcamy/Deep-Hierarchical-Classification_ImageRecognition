@@ -28,9 +28,16 @@ The github form : [Github - Ugenteraan Manogaran][2]
 4. runtime_args.py : 訓練前確認路徑＆相關參數設定。
 5. model/resnet50.py ：num_classes類別數量需要修改。(coarse_label_names個數 & fine_label_names個數)
 6. resize.py : 照片 resize 。
-7. DeepHC.py ：模型訓練。
-8. detect.py :  Inference。
+7. DeepHC.py ：模型訓練
 
+## Data Inference
+1. dataPickle_detect.py : 資料丟入之前先轉換成 dataset/pickle_files/detect，再轉成 dataset/detect.csv。
+    - 照片需放在 dataset/detect_imgs。
+2. resize.py : 照片記得resize。
+2. detect.py :  Inference預測，結果dataset/result/detect_predict.csv。
+
+## .py檔案稍微修改
+1. load_dataset.py : 原本retrun_labe（image,label_1,label_2) 新增一個image_path
 
 [1]: https://arxiv.org/pdf/2005.06692.pdf "Deep Hierarchical Classification for Category Prediction in E-commerce System"
 [2]:https://github.com/Ugenteraan/Deep_Hierarchical_Classification "Github - Ugenteraan Manogaran"

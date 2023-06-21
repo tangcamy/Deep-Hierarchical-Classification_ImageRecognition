@@ -10,13 +10,13 @@ data root
 '''
 
 rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/20_BL/'
-
 projectroot = '/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/'
 root = projectroot+'dataPickle_Transform/'
 pickle_root = root + 'pickel_files/'
 pickleDataset_root = root + 'preimages/'
 pickleTrain_root = pickleDataset_root + 'train/'
 pickleTest_root = pickleDataset_root + 'test/'
+
 
 '''
 data save: 
@@ -33,7 +33,7 @@ makedirs(pickle_root)
 makedirs(pickleDataset_root)
 makedirs(pickleTrain_root)
 makedirs(pickleTest_root)
-
+makedirs(pickledetect_root)
 # In[1] section-1 < meta >: coarse_label_names,fine_label_names
 data = {
 'coarse_label_names': ['NP','UP','OP','INT'],
@@ -62,27 +62,16 @@ def imgDataClean(fileName,dataset,dstroot,typeset,datalen):
     for img in dataset:
         shutil.copyfile(rootPic+i+'/'+img, dstroot+str(fileName)+'_'+img)
         print(dstroot+str(fileName)+'_'+img)
-        if typeset =='train':
-            a=[fileName]
-            a=a[0].split('@')
-            df=pd.DataFrame()
-            df['FileName']=[fileName]
-            df['dataNumber']=str(datalen)
-            df['locationFlag']=a[1]
-            df['dataType']='train'
-            df['picName']=str(fileName)+'_'+img
-            datasave(root,df,csvtotalname)
-        else:
-            a=[fileName]
-            a=a[0].split('@')
-            df=pd.DataFrame()
-            df['FileName']=[fileName]
-            df['dataNumber']=str(datalen)
-            df['locationFlag']=a[1]
-            df['dataType']='test'
-            df['picName']=str(fileName)+'_'+img
-            datasave(root,df,csvtotalname)
-        
+        a=[fileName]
+        a=a[0].split('@')
+        df=pd.DataFrame()
+        df['FileName']=[fileName]
+        df['dataNumber']=str(datalen)
+        df['locationFlag']=a[1]
+        df['dataType']=typeset
+        df['picName']=str(fileName)+'_'+img
+        datasave(root,df,csvtotalname)
+
 def DataLess(value,fileListData):
     df=pd.DataFrame()
     df['FileName']=[value]
@@ -105,6 +94,8 @@ def datasave(SAVEROOT,FINALDF,FILENAME):
     else:
         FINALDF.to_csv(FILENAME+'.csv',index=False)
 
+
+''' rootPic : rowdata來源( file/ filename)'''
 for i in os.listdir(rootPic):
     try:
         #i='GLASS CULLET@UCT@TFT@Cell'
@@ -118,8 +109,8 @@ for i in os.listdir(rootPic):
 
             FileNameCheck = NameListCheck(i)
             if FileNameCheck[2] == 'CF' or FileNameCheck[2] == 'TFT':
-                imgDataClean(i,trainData,pickleDataset_root+'train/','train',len(fileList))
-                imgDataClean(i,testData,pickleDataset_root+'test/','test',len(fileList))
+                imgDataClean(i,trainData,pickleTrain_root,'train',len(fileList))
+                imgDataClean(i,testData,pickleTest_root,'test',len(fileList))
             else:
                 DataLess(i,fileList)
         else:
@@ -155,7 +146,7 @@ def Nameselect(value):
     site = b[3]
     return DefectName,LocationFlag,DefectLocate,site
 
-##-----train part -------##
+'''##-----train part -------##'''
 print('-----------------------------------Train--------------------------------------')
 
 train_filenames_list=[]
@@ -170,7 +161,7 @@ for name in os.listdir(pickleTrain_root):
     train_finelabels_list.append(fine_label_names.index(b[0])) #defectname
     print(name)
 
-# 存資料
+'''# 存資料'''
 train = {
 'filenames': train_filenames_list,
 'fine_labels':train_finelabels_list,
@@ -180,10 +171,8 @@ os.chdir(pickle_root)
 with open('train','wb') as file:# 'meta.pickle'
     pickle.dump(train, file) # 使用 dump 把 data 倒進去 file 裡面
 
-
-##-----test part -------##
+'''##-----test part -------##'''
 print('-----------------------------------Test--------------------------------------')
-
 test_filenames_list=[]
 test_finelabels_list=[]
 test_coarselabels_list=[]
@@ -197,7 +186,7 @@ for name in os.listdir(pickleTest_root):
     test_finelabels_list.append(fine_label_names.index(b[0])) #defectname
     print(name)
 
-# 存資料
+'''# 存資料'''
 test = {
 'filenames': test_filenames_list,
 'fine_labels':test_finelabels_list,

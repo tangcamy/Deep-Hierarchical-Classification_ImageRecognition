@@ -88,3 +88,12 @@ p = Preprocess()
 ##-----test-----##
 p.process_data(train=False) #process the testing set
 print('test download ok')
+
+
+
+
+
+
+
+
+

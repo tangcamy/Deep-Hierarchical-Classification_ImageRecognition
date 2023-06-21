@@ -88,7 +88,7 @@ class LoadDataset(Dataset):
         if self.transform:
             image = self.transform(image)
 
-        if self.return_label:
+        if self.return_label:#add 
             return {
                 'image':image/255.0,
                 'label_1': self.coarse_labels.index(superclass.strip(' ')),
