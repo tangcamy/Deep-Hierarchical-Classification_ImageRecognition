@@ -33,7 +33,6 @@ makedirs(pickle_root)
 makedirs(pickleDataset_root)
 makedirs(pickleTrain_root)
 makedirs(pickleTest_root)
-makedirs(pickledetect_root)
 # In[1] section-1 < meta >: coarse_label_names,fine_label_names
 data = {
 'coarse_label_names': ['NP','UP','OP','INT'],
