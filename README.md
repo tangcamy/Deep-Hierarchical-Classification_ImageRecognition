@@ -19,8 +19,8 @@ The github form : [Github - Ugenteraan Manogaran][2]
     - setction-2 train / test >  create : filenames , fine_labels , coarse_labels.
     - section-3 < read meta dic for data transform index > & < train / test >  create : filenames , fine_labels , coarse_labels.
     - [資料夾說明]
-        1. preimages/train,preimage/test 的照片要放在 dataset/images。
-        2. meta,train,test 要放在 dataset/pickle_files。
+        1. dataPickle_Transform/preimages/train , dataPickle_Transform/preimage/test 的照片要放在 dataset/images。
+        2. dataPickle_Transform/picklefiles/meta,train,test 要放在 dataset/pickle_files。
         3. 會產生一個pickleTotal.csv彙整表。
 2. process_dataset.py : 建立train.csv /  test.csv。
 3. level_dic.py : 建立 level_1 與 Level_2 階層字典。
