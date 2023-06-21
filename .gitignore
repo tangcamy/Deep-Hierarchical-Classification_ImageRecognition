@@ -1,20 +1,16 @@
 
-
-dataset/**
+dataset/model_save.pth
+dataset/detect_imgs/**
 dataset/images_cifar/**
 dataset/images/**
 dataset/pickle_files/**
-dataset/pickle_files/cifar-100-python.zip
-dataset/pickle_files/cifar-100-python
-dataset/pickle_files/train
-dataset/pickle_files/test
-dataset/pickle_files/meta
-dataset/model_save.pth
+dataset/pickle_files_cifar/**
 
-dataset/dataPickle_Transform/**
+
 dataPickle_Transform/pickel_files/**
 dataPickle_Transform/preimages/train/**
 dataPickle_Transform/preimages/**
+dataPickle_Transform/*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

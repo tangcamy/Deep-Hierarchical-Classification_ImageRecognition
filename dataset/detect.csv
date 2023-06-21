@@ -1,0 +1,360 @@
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_BCUH9PA-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5CG7HE-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5931DR-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B51D8NM-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B21Z2UG-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VV1XD-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_BCZP9ZM-2-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B4UJ9QR-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B28X7HB-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_H5E52AH-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B4VL8ED-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B57D92B-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_5L3B50E9T0SD-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B60K3SK-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B5BL4HF-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B5D73XS-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B57S1MF-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B95E3EM-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B58Q52T-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B57S1HN-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B4U62GC-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B5AS4CB-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5B27LC-2-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B55P0CP-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B59E44Q-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5581MH-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_HCJA4DD-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B60V5MF-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B4X02WE-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B61V4MF-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_7D3B5370G0CB-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5BJ8AG-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B56H6FL-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B61V3DG-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B4UM8SC-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5AY2QA-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_H4CZ0QC-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VE8EA-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4SL4CH-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B4X00YC-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5B27LC-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B4X284T-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B50K1NC-2-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B4VV1XB-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4WZ9JF-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4X00QF-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B4N61WG-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B55E1KF-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B58743J-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B38X1PT-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B55Q4UA-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5859EM-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B57L7EM-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B3916EH-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4RA4RD-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4TN2TV-1-2.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_HBJL0AA-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_HBMQ4AG-1-4.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_H3CJ3JF-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5CH1MA-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B54C0CJ-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B6214RD-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_HCAD8LE-2-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B59E5QM-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B5BL4RB-1-3.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B61V7DK-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B4U77QL-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B5633RM-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4N98AM-1-4.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B53U52T-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VF0GF-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_CG3B51K4H0LD-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_7S3B5AA0Q0AE-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VL0BB-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5BK2BQ-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B54U6JR-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B51D0AT-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B2419PB-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B4X01JF-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5CG8ST-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4T93PR-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5595CH-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B4K48EP-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B37044C-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B51D0AF-2-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B4TB4QM-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B4U14FD-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B4X04UA-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BBTC5WG-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B28S1PC-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B54J0HC-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B53U2UH-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BAX73QE-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_C92B563020BB-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B38N2AB-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B50Q93M-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BAMT9ME-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B58P2ZS-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B5AY0AQ-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BBKP73S-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BBQU1LS-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B3774NG-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5CW1PR-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B4WG7QG-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B59312K-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5595DS-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B29G6HA-1-4.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B4K83FQ-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B24K2CM-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B57J2MH-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B57R3AC-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4WZ94E-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VV2UA-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5AR8TA-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B15C8PC-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B52E4BB-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_H3M22MA-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B4WZ8LC-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B5CR9NS-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4MA9YD-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B6214RH-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B62W3NA-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B4QS23N-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B57J5UB-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4S74HH-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5B01VT-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_BBVK6WE-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B58Q0PG-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B5AR9JS-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B27R6MA-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B4TB6QD-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B4WZ83A-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B4VE9XC-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5853CF-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5B092M-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B54T64R-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5622TH-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B59S3CT-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B6135JA-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VV1UB-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B12Z2AF-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B5C91GD-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5CV42A-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B6244AB-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B5CG0SG-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VE3AF-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B4X00RD-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B4RG3CS-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B57S0CT-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B51D9YP-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B57R5JD-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B28G5XC-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4UJ6BE-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B5BK6FF-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B56Y9HN-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B50J7ZC-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B4X28YB-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4SQ5TD-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5AN1KR-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B51D81F-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_H1G06AF-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B59E0GC-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B1754YL-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VW0FE-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B54J0ZB-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5862DJ-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B5627DC-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B4MK5DJ-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B57E3ZJ-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B38N6WB-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B70Z4FA-1-3.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B53V42C-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5BL54A-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B50Q9GA-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B4LS1QT-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5B24EB-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B33Y73Q-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_HCAE0EE-2-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B57D7WC-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B57T7DR-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B4ML03C-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BCWD1ZE-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VV3RC-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B4UZ7CN-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B4MA0UR-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VV23B-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5BK1KD-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B6197BL-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5BJ43F-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B58Q2US-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5D78PC-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5AY6RA-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_H5E51QJ-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5CM1XB-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B61F71N-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_6Q3B50F1S0BD-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B5CV0RF-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B4WQ5AF-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B91U92D-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B4N75QE-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B4NN8NM-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B57L7SH-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5654ZJ-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VV0YB-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_H5E56CC-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B8617TH-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B1103YH-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B4MB8GB-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B56414S-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B4UZ0ND-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BATX5AH-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5634TM-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5CG14M-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B5DD4FP-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5371SD-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B81X1WG-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5CV0CN-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B62X9UC-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_BATT8SM-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B62X2HA-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5B11KT-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_H1G03UC-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4U61PE-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4NV6TS-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B5052PC-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B13F32J-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B60N7SA-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B58A1RQ-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B59E4EN-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5BK9MG-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_6Q3B5DG5K0GD-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B6138DJ-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5DQ4UJ-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5DD7JN-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B37Y7EC-1-3.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B56Z6UP-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B5637ZD-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5BH1VR-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B5AZ6CT-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B62X2DD-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B5CU5WT-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B5DD5NE-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5BH8TF-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B5CU5YT-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B53U41R-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B37G9FM-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B5B13VF-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B6095EA-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4TL4GD-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B14N9SD-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5AL2LF-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5AZ8MA-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B56301R-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B54B2VJ-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_H1CV5BF-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B55Q7AG-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B51D0AT-2-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B56L0HD-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B4TL4DD-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B5AZ5WT-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@UP@TFT@Cell_B4R41JT-1-3.jpg, UP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B5BL62C-1-3.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_H1CV5BE-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B60N7PR-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B57R9FC-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5A613A-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B54H6MB-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B56G8YE-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B5CF2DB-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B31N8JA-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B61Y7QT-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B4S59QD-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B5DD64T-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VW1YC-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B54B2BR-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5DQ4US-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B59124M-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B58P24D-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B56Z1SC-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B57D7SJ-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B5DD9JA-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5B00TD-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_C82B7489M0CJ-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_H5B86HJ-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B54T6JC-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B4VL8PF-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B1465KD-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VE4QA-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B4UZ44T-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B4TY1CB-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B5DS4Z1-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4K244U-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_CG3B51K4H0MD-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B4U61AB-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_BASZ6LD-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4TW6SD-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B61V7XR-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B62X9UB-2-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B5AN1DE-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4WZ62E-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B4S594C-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B61F8LB-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B5CV41A-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B4S74HA-1-3.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B39A8DF-1-4.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B4U77RL-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4WV5FT-2-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B4VK9BC-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B2106BT-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5BK1FN-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_B4N06DC-1-3.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B4VV2QA-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VV8BB-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B59271B-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B5870GF-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5DF22R-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_G73B2805F0BC-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B4VV5MC-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B50J7RT-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B5636UH-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ESD@INT@TFT@Cell_HCAL5BE-1-1.jpg, INT, ESD
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5CF1TN-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/LIGHT METAL@UP@CF@Cell_B33Z1LL-1-3.jpg, UP, LIGHT METAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B5AY4JT-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B57U0NT-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_B5632QJ-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B4VL4HD-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PV-HOLE-T@NP@TFT@Array_B61F7BJ-1-3.jpg, NP, PV-HOLE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B38M9GC-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_B5578QP-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@OP@CF@Cell_813B5286C0EE-1-3.jpg, OP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_H5E52FC-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@CF@Cell_HCAD8TD-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B5CF1UT-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B5AZ8DA-2-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5C89YB-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VL6AA-1-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF DEFECT@NP@CF@CF_B58C02C-1-3.jpg, NP, CF DEFECT
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_BAVC81H-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B55P0BD-2-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B54J1HP-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4RQ02L-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B50Y62M-1-4.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B4S79HE-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS CULLET@OP@CF@Cell_B4RR0TL-1-3.jpg, OP, GLASS CULLET
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B54J2KF-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/GLASS BROKEN@INT@TFT@Cell_B4T91GP-1-3.jpg, INT, GLASS BROKEN
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF PS DEFORMATION@NP@CF@CF_B4VE21B-2-3.jpg, NP, CF PS DEFORMATION
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B55Q5DH-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/AS-RESIDUE-E@NP@TFT@Array_B57U2CA-1-3.jpg, NP, AS-RESIDUE-E
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5AY5GF-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/FIBER@UP@TFT@Cell_B4LP8XG-1-3.jpg, UP, FIBER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/ITO-RESIDUE-T@NP@TFT@Array_B59S53C-1-3.jpg, NP, ITO-RESIDUE-T
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@TFT@Cell_B5CV1FP-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B5AL63M-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_H5D72FJ-1-3.jpg, UP, PI SPOT-WITH PAR
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/POLYMER@OP@CF@Cell_B5B774L-1-3.jpg, OP, POLYMER
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/CF REPAIR FAIL@NP@CF@CF_B36C6FR-1-3.jpg, NP, CF REPAIR FAIL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/M1-ABNORMAL@NP@TFT@Array_B4S763A-1-3.jpg, NP, M1-ABNORMAL
+/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/PI SPOT-WITH PAR@UP@TFT@Cell_B6197YQ-1-3.jpg, UP, PI SPOT-WITH PAR

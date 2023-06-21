@@ -9,7 +9,6 @@ The github form : [Github - Ugenteraan Manogaran][2]
 ## setting 
 - 下載測試集:process_cifar100.py 
 - 路徑確認設定:runtime_args.py
-
 ## Training 
 - 使用DeepHC.py 進行訓練 ; 原本(作者train.py)會在執行from plot import plot_loss_acc函式出錯
 - plot.py 修改成DeepHC.py的型態，但包成函式執行還是會出錯 ; 原本作者(plot_oldversion.py )
@@ -31,10 +30,15 @@ The github form : [Github - Ugenteraan Manogaran][2]
 7. DeepHC.py ：模型訓練
 
 ## Data Inference
-1. dataPickle_detect.py : 資料丟入之前先轉換成 dataset/pickle_files/detect，再轉成 dataset/detect.csv。
-    - 照片需放在 dataset/detect_imgs。
-2. resize.py : 照片記得resize。
-2. detect.py :  Inference預測，結果dataset/result/detect_predict.csv。
+1. dataPickle_detect.py : 資料丟入之前先轉換成detect(pickle),照片名稱預先處理（之後這部份可以考慮步用）。
+    - save detect pickle 轉換在：dataPickle_Transform/pickle_files/detect
+    - save detect image 轉換在： dataPickle_Transform/preimages/detect;
+2. process_detect.py:需先將必要的資料父至於對應資料夾中，會產生出一個detect.csv。
+    - detect pickle 複製:(dataPickle_Transform/pickle_files/) 複製貼到 (data/pickle_files/)。
+    - image 複製::(dataPickle_Transform/preimages/) 複製貼到 (data/detect_imgs/)。
+    - detect.csv : 程式產生儲存在 dataset/。
+3. resize.py : data/detect_imgs 照片記得resize。
+4. detect.py :  Inference預測，結果dataset/result/detect_predict.csv。
 
 ## .py檔案稍微修改
 1. load_dataset.py : 原本retrun_labe（image,label_1,label_2) 新增一個image_path
