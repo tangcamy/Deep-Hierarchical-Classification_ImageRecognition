@@ -31,12 +31,9 @@ model = resnet50.ResNet50()
 model = model.to(device)
 model.load_state_dict(torch.load(modelName))
 model.eval()
-#print(model)
-
-
 
 ''' predict csv'''
-datacsv ='test.csv' #args.test_csv現在路徑在args.model_save_path
+datacsv ='detect.csv' #args.test_csv現在路徑在args.model_save_path
 
 '''data - loader'''
 batch_size=1
@@ -50,9 +47,12 @@ detect_dataset = LoadDataset(image_size=args.img_size, image_depth=args.img_dept
 detect_generator = DataLoader(detect_dataset, batch_size=batch_size, shuffle=False, num_workers=args.num_workers)
 
 dfsave = pd.DataFrame()
+datacount = len(detect_dataset.data_list)
+
 r=0
 for e in range(epoch):
         for j, sample in tqdm(enumerate(detect_generator)): #detect_generator
+                print("-----------Number-----:"+str(j))
                 #----for test.csv testing----#
                 batch_x ,batch_y1,batch_y2,imgpath= sample['image'].to(device), sample['label_1'].to(device), sample['label_2'].to(device),sample['image_path']
                 print(imgpath,batch_y1,batch_y2)
@@ -89,7 +89,9 @@ for e in range(epoch):
                         'Layer_1_ans':imgclass,
                         'Layer_1_conf':str(conf[0].tolist())[:6],
                         'Layer_2_ans':imgclass_sub,
-                        'Layer_2_conf':str(conf_sub[0].tolist())[:6]
+                        'Layer_2_conf':str(conf_sub[0].tolist())[:6],
+                        'Layer_1_True':coarse_labels[(batch_y1.item())],
+                        'Layer_2_True':fine_labels[(batch_y2.item())]
                 }
                 ''' dataframe concat'''
                 datadic[imgpath[0]] = output_dic
@@ -100,11 +102,17 @@ for e in range(epoch):
                         dfsave = df 
                 else :
                         dfsave = pd.concat([df,dfsave],axis=0)
-                
-                #print(datadic)
-                r=r+1
-                if r == 2 :
-                        break
+
+                #print(dfsave)
+                ''' 暫時設定'''
+                #r=r+1
+                #if r == 2 :
+                #        break
+
+'''datasave cleaner'''
+index_duplicates = dfsave.index.duplicated()
+dfsave = dfsave.loc[~index_duplicates]
+#dfsave.reset_index(drop=True,inplace=True)
 
 makedirs(args.model_save_path+'result/')
 dfsave.to_csv(args.model_save_path+'result/detect_predict.csv',index=True,index_label='ImagePath')
