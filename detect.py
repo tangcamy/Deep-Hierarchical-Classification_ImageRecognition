@@ -13,6 +13,12 @@ from load_dataset import LoadDataset
 from helper import read_meta
 from urllib.request import urlopen
 
+def makedirs(path):
+    try:
+        os.makedirs(path)
+    except:
+        return
+
 
 device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == 'gpu' else 'cpu')
 
@@ -100,6 +106,7 @@ for e in range(epoch):
                 if r == 2 :
                         break
 
+makedirs(args.model_save_path+'result/')
 dfsave.to_csv(args.model_save_path+'result/detect_predict.csv',index=True,index_label='ImagePath')
 print('data_save:'+args.model_save_path+'detect_predict.csv')
 
