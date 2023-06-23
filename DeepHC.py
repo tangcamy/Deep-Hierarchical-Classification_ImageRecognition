@@ -11,7 +11,7 @@ import torch
 print(torch.__version__)
 print('Torch Cuda:',torch.cuda.is_available())
 print('Torch Cuda Device counts:',torch.cuda.device_count())
-current = '/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/'
+current = '/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/'
 os.chdir(current)
 # In[步驟]
 '''
@@ -29,7 +29,7 @@ from torch.optim import Adam
 from torchsummary import summary #pip install torchsummary
 import torchvision.transforms as transforms
 
-from level_dict import hierarchy
+from level_dict import hierarchy,hierarchy_two
 from runtime_args import args
 from load_dataset import LoadDataset
 from model import resnet50
@@ -74,17 +74,17 @@ model = resnet50.ResNet50()
 optimizer = Adam(model.parameters(), lr=args.learning_rate)
 
 model = model.to(device)
-HLN = HierarchicalLossNetwork(metafile_path=args.metafile, hierarchical_labels=hierarchy, device=device)
+HLN = HierarchicalLossNetwork(metafile_path=args.metafile, hierarchical_labels_one=hierarchy,hierarchical_labels_two=hierarchy_two, total_level=3,device=device)
 
 train_epoch_loss = []
 train_epoch_superclass_accuracy = []
 train_epoch_subclass_accuracy = []
+train_epoch_subtwoclass_accuracy = []
 
 test_epoch_loss = []
 test_epoch_superclass_accuracy = []
 test_epoch_subclass_accuracy = []
-
-
+test_epoch_subtwoclass_accuracy = []
 
 #----- training 
 for epoch_idx in range(args.epoch):
@@ -94,34 +94,39 @@ for epoch_idx in range(args.epoch):
     epoch_loss = []
     epoch_superclass_accuracy = []
     epoch_subclass_accuracy = []
+    epoch_subtwoclass_accuracy = []
 
     model.train()
     for i, sample in tqdm(enumerate(train_generator)):
-        batch_x, batch_y1, batch_y2 = sample['image'].to(device), sample['label_1'].to(device), sample['label_2'].to(device)
+        batch_x, batch_y1, batch_y2, batch_y3 = sample['image'].to(device), sample['label_1'].to(device), sample['label_2'].to(device),sample['label_3'].to(device)
         optimizer.zero_grad()
-
-        superclass_pred,subclass_pred = model(batch_x)
-        prediction = [superclass_pred, subclass_pred]
-        dloss = HLN.calculate_dloss(prediction, [batch_y1, batch_y2])
-        lloss = HLN.calculate_lloss(prediction, [batch_y1, batch_y2])
-
+              
+        superclass_pred,subclass_pred ,subtwoclass_pred = model(batch_x)
+        prediction = [superclass_pred, subclass_pred,subtwoclass_pred] # add subtwoclass - layer3
+    
+        dloss = HLN.calculate_dloss(prediction, [batch_y1, batch_y2,batch_y3]) #depense loss
+        lloss = HLN.calculate_lloss(prediction, [batch_y1, batch_y2,batch_y3]) # layer loss
+        
         total_loss = lloss + dloss
         total_loss.backward()
         optimizer.step()
         epoch_loss.append(total_loss.item())
         epoch_superclass_accuracy.append(calculate_accuracy(predictions=prediction[0].detach(), labels=batch_y1))
         epoch_subclass_accuracy.append(calculate_accuracy(predictions=prediction[1].detach(), labels=batch_y2))
+        epoch_subtwoclass_accuracy.append(calculate_accuracy(predictions=prediction[2].detach(), labels=batch_y3))
 
 
     train_epoch_loss.append(sum(epoch_loss)/(i+1))
     train_epoch_superclass_accuracy.append(sum(epoch_superclass_accuracy)/(i+1))
     train_epoch_subclass_accuracy.append(sum(epoch_subclass_accuracy)/(i+1))
+    train_epoch_subtwoclass_accuracy.append(sum(epoch_subtwoclass_accuracy)/(i+1))
 
 
 
     print(f'Training Loss at epoch {epoch_idx} : {sum(epoch_loss)/(i+1)}')
     print(f'Training Superclass accuracy at epoch {epoch_idx} : {sum(epoch_superclass_accuracy)/(i+1)}')
     print(f'Training Subclass accuracy at epoch {epoch_idx} : {sum(epoch_subclass_accuracy)/(i+1)}')
+    print(f'Training Subtwoclass accuracy at epoch {epoch_idx} : {sum(epoch_subtwoclass_accuracy)/(i+1)}')
 
 
     j = 0
@@ -129,6 +134,7 @@ for epoch_idx in range(args.epoch):
     epoch_loss = []
     epoch_superclass_accuracy = []
     epoch_subclass_accuracy = []
+    epoch_subtwoclass_accuracy = []
 
     model.eval()
     with torch.set_grad_enabled(False):
@@ -136,23 +142,26 @@ for epoch_idx in range(args.epoch):
         for j, sample in tqdm(enumerate(test_generator)):
 
 
-            batch_x, batch_y1, batch_y2 = sample['image'].to(device), sample['label_1'].to(device), sample['label_2'].to(device)
+            batch_x, batch_y1, batch_y2 ,batch_y3= sample['image'].to(device), sample['label_1'].to(device), sample['label_2'].to(device), sample['label_3'].to(device)
+        
+            superclass_pred,subclass_pred,subtwoclass_pred= model(batch_x)
+            prediction = [superclass_pred,subclass_pred,subtwoclass_pred]
 
-            superclass_pred,subclass_pred = model(batch_x)
-            prediction = [superclass_pred,subclass_pred]
-            dloss = HLN.calculate_dloss(prediction, [batch_y1, batch_y2])#depeense loss
-            lloss = HLN.calculate_lloss(prediction, [batch_y1, batch_y2])#loss
+            dloss = HLN.calculate_dloss(prediction, [batch_y1, batch_y2,batch_y3])#depeense loss
+            lloss = HLN.calculate_lloss(prediction, [batch_y1, batch_y2,batch_y3])#loss
 
             total_loss = lloss + dloss
 
             epoch_loss.append(total_loss.item())
             epoch_superclass_accuracy.append(calculate_accuracy(predictions=prediction[0], labels=batch_y1))
             epoch_subclass_accuracy.append(calculate_accuracy(predictions=prediction[1], labels=batch_y2))
+            epoch_subtwoclass_accuracy.append(calculate_accuracy(predictions=prediction[2], labels=batch_y3))
 
 
     test_epoch_loss.append(sum(epoch_loss)/(j+1))
     test_epoch_superclass_accuracy.append(sum(epoch_superclass_accuracy)/(j+1))
     test_epoch_subclass_accuracy.append(sum(epoch_subclass_accuracy)/(j+1))
+    test_epoch_subtwoclass_accuracy.append(sum(epoch_subtwoclass_accuracy)/(j+1))
 
     # #plot accuracy and loss graph - plot
     # plot_loss_acc(path=args.graphs_folder, num_epoch=epoch_idx, train_accuracies_superclass=train_epoch_superclass_accuracy,
@@ -166,10 +175,11 @@ for epoch_idx in range(args.epoch):
     print(f'Testing Loss at epoch {epoch_idx} : {sum(epoch_loss)/(j+1)}')
     print(f'Testing Superclass accuracy at epoch {epoch_idx} : {sum(epoch_superclass_accuracy)/(j+1)}')
     print(f'Testing Subclass accuracy at epoch {epoch_idx} : {sum(epoch_subclass_accuracy)/(j+1)}')
+    print(f'Testing Subtwoclass accuracy at epoch {epoch_idx} : {sum(epoch_subtwoclass_accuracy)/(j+1)}')
     print('-------------------------------------------------------------------------------------------')
 
-    torch.save(model.state_dict(), args.model_save_path+'FMA.pth')
-    torch.save(model.state_dict(), args.model_save_path+'FMA.pt')
+    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer.pth')
+    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer.pt')
     print("Model saved!")
     
     
@@ -178,11 +188,14 @@ for epoch_idx in range(args.epoch):
     print('starte picture for acc')
     path=args.graphs_folder, 
     num_epoch=epoch_idx, 
+
     train_accuracies_superclass=train_epoch_superclass_accuracy,
     train_accuracies_subclass=train_epoch_subclass_accuracy, 
+    train_accuracies_subtwoclass=train_epoch_subtwoclass_accuracy, 
     train_losses=train_epoch_loss,
     test_accuracies_superclass=test_epoch_superclass_accuracy, 
     test_accuracies_subclass=test_epoch_subclass_accuracy,
+    test_accuracies_subtwoclass=test_epoch_subtwoclass_accuracy,
     test_losses=test_epoch_loss,#沒有逗號資料格式會變成list ，如果有就是tuple
     
     
@@ -192,11 +205,14 @@ for epoch_idx in range(args.epoch):
     
     train_superclass_accuracy_df = pd.DataFrame({"Epochs":epochs, "Accuracy":train_accuracies_superclass[0], "Mode":['train']*(num_epoch[0]+1)})
     train_subclass_accuracy_df = pd.DataFrame({"Epochs":epochs, "Accuracy":train_accuracies_subclass[0], "Mode":['train']*(num_epoch[0]+1)})
+    train_subtwoclass_accuracy_df = pd.DataFrame({"Epochs":epochs, "Accuracy":train_accuracies_subtwoclass[0], "Mode":['train']*(num_epoch[0]+1)})
     test_superclass_accuracy_df = pd.DataFrame({"Epochs":epochs, "Accuracy":test_accuracies_superclass[0], "Mode":['test']*(num_epoch[0]+1)})
     test_subclass_accuracy_df = pd.DataFrame({"Epochs":epochs, "Accuracy":test_accuracies_subclass[0], "Mode":['test']*(num_epoch[0]+1)})
+    test_subtwoclass_accuracy_df = pd.DataFrame({"Epochs":epochs, "Accuracy":test_accuracies_subtwoclass[0], "Mode":['test']*(num_epoch[0]+1)})
     
     data_superclass = pd.concat([train_superclass_accuracy_df, test_superclass_accuracy_df])
     data_subclass = pd.concat([train_subclass_accuracy_df, test_subclass_accuracy_df])
+    data_subtwoclass = pd.concat([train_subtwoclass_accuracy_df, test_subtwoclass_accuracy_df])
     
     sns.lineplot(data=data_superclass.reset_index(inplace=False), x='Epochs', y='Accuracy', hue='Mode')
     plt.title('Superclass Accuracy Graph')
@@ -210,7 +226,13 @@ for epoch_idx in range(args.epoch):
     #plt.show()
     plt.clf()
     
-    
+       
+    sns.lineplot(data=data_subtwoclass.reset_index(inplace=False), x='Epochs', y='Accuracy', hue='Mode')
+    plt.title('Subclass Accuracy Graph')
+    plt.savefig(path[0]+f'accuracy_subtwoclass_epoch.png')
+    #plt.show()
+    plt.clf()
+
     #--計算LOSS--#
     train_loss_df = pd.DataFrame({"Epochs":epochs, "Loss":train_losses[0], "Mode":['train']*(num_epoch[0]+1)})
     test_loss_df = pd.DataFrame({"Epochs":epochs, "Loss":test_losses[0], "Mode":['test']*(num_epoch[0]+1)})

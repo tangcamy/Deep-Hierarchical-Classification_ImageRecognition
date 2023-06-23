@@ -1,7 +1,6 @@
 import pickle
 import os 
 import pandas as pd
-import pickle 
 import shutil
 
 # 注意：使用 pickle 的時候，檔名不可以命名成 pickle.py 
@@ -10,7 +9,7 @@ data root
 '''
 
 rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/20_BL/'
-projectroot = '/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/'
+projectroot = '/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/'
 root = projectroot+'dataPickle_Transform/'
 pickle_root = root + 'pickel_files/'
 pickleDataset_root = root + 'preimages/'
@@ -33,11 +32,11 @@ makedirs(pickle_root)
 makedirs(pickleDataset_root)
 makedirs(pickleTrain_root)
 makedirs(pickleTest_root)
-makedirs(pickledetect_root)
 # In[1] section-1 < meta >: coarse_label_names,fine_label_names
 data = {
-'coarse_label_names': ['NP','UP','OP','INT'],
-'fine_label_names': ['CF REPAIR FAIL','PI SPOT-WITH PAR','POLYMER','GLASS BROKEN','PV-HOLE-T','CF DEFECT','CF PS DEFORMATION','FIBER','AS-RESIDUE-E','LIGHT METAL','GLASS CULLET','ITO-RESIDUE-T','M1-ABNORMAL','ESD']
+'coarse_label_names':['TFT','CF'],
+'fine_label_names': ['NP','UP','OP','INT'],
+'third_label_names': ['CF REPAIR FAIL','PI SPOT-WITH PAR','POLYMER','GLASS BROKEN','PV-HOLE-T','CF DEFECT','CF PS DEFORMATION','FIBER','AS-RESIDUE-E','LIGHT METAL','GLASS CULLET','ITO-RESIDUE-T','M1-ABNORMAL','ESD']
 }
 # 存資料
 os.chdir(pickle_root)
@@ -121,7 +120,7 @@ for i in os.listdir(rootPic):
         print('error'+str(i))
 
 
-# In[3] section-3 < read meta dic for data transform index > & < train / test >  create : filenames , fine_labels , coarse_labels
+# In[3] section-3 < read meta dic for data transform index > & < train / test >  create : filenames , fine_labels , coarse_labels,third_labels
 '''
 load meta for selection
 '''
@@ -136,6 +135,7 @@ def unpickle(file):
 meta_data = unpickle(pickle_root+'meta')
 fine_label_names = meta_data['fine_label_names']
 coarse_label_names = meta_data['coarse_label_names']
+third_label_names = meta_data['third_label_names']
 
 
 def Nameselect(value):
@@ -152,20 +152,24 @@ print('-----------------------------------Train---------------------------------
 train_filenames_list=[]
 train_coarselabels_list=[]
 train_finelabels_list=[]
+train_thirdlabels_lsit=[]
 for name in os.listdir(pickleTrain_root):
     a = name.split('_') #a[0]=CF REPAIR FAIL@NP@CF@CF ; a[1]= 20220816 ; a[2]=B76V2XE-1-3.jpg
     imgclassification = a[0]
     b = Nameselect(imgclassification) 
+    print(b)
     train_filenames_list.append(name)
-    train_coarselabels_list.append(coarse_label_names.index(b[1])) #locationflag
-    train_finelabels_list.append(fine_label_names.index(b[0])) #defectname
+    train_coarselabels_list.append(coarse_label_names.index(b[2])) #defectlocate ,TFT&CF 
+    train_finelabels_list.append(fine_label_names.index(b[1])) #LocateFlog, NP UP OP INT
+    train_thirdlabels_lsit.append(third_label_names.index(b[0]))# FMA Defect
     print(name)
 
 '''# 存資料'''
 train = {
 'filenames': train_filenames_list,
 'fine_labels':train_finelabels_list,
-'coarse_labels':train_coarselabels_list
+'coarse_labels':train_coarselabels_list,
+'third_labels':train_thirdlabels_lsit
 }
 os.chdir(pickle_root)
 with open('train','wb') as file:# 'meta.pickle'
@@ -176,21 +180,24 @@ print('-----------------------------------Test----------------------------------
 test_filenames_list=[]
 test_finelabels_list=[]
 test_coarselabels_list=[]
+test_thirdlabels_lsit=[]
 
 for name in os.listdir(pickleTest_root):
     a = name.split('_') #a[0]=CF REPAIR FAIL@NP@CF@CF ; a[1]= 20220816 ; a[2]=B76V2XE-1-3.jpg
     imgclassification = a[0]
     b = Nameselect(imgclassification) 
     test_filenames_list.append(name)
-    test_coarselabels_list.append(coarse_label_names.index(b[1])) #locationflag
-    test_finelabels_list.append(fine_label_names.index(b[0])) #defectname
+    test_coarselabels_list.append(coarse_label_names.index(b[2])) #defectlocate ,TFT&CF 
+    test_finelabels_list.append(fine_label_names.index(b[1])) #LocateFlog, NP UP OP INT
+    test_thirdlabels_lsit.append(third_label_names.index(b[0]))# FMA Defect
     print(name)
 
 '''# 存資料'''
 test = {
 'filenames': test_filenames_list,
 'fine_labels':test_finelabels_list,
-'coarse_labels':test_coarselabels_list
+'coarse_labels':test_coarselabels_list,
+'third_labels':test_thirdlabels_lsit
 }
 os.chdir(pickle_root)
 with open('test','wb') as file:# 'meta.pickle'

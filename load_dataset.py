@@ -7,7 +7,7 @@ import csv
 import cv2
 from PIL import Image
 from torch.utils.data import Dataset
-from level_dict import hierarchy
+from level_dict import hierarchy,hierarchy_two
 from helper import read_meta
 
 
@@ -29,7 +29,7 @@ class LoadDataset(Dataset):
         self.meta_filename = cifar_metafile
         self.transform = transform
         self.data_list = self.csv_to_list()
-        self.coarse_labels, self.fine_labels = read_meta(self.meta_filename)
+        self.coarse_labels, self.fine_labels ,self.third_labels= read_meta(self.meta_filename)
         self.image_name_list = self.data_to_imagename()
 
         #check if the hierarchy dictionary is consistent with the csv file
@@ -40,6 +40,13 @@ class LoadDataset(Dataset):
                 if not subclass in self.fine_labels:
                     print(f"Subclass missing! {subclass}")
 
+        #check if the hierarchy_two dictionary is consistent with the csv file
+        for k,v in hierarchy_two.items():
+            if not k in self.fine_labels:
+                print(f"Superclass missing! {k}")
+            for subclass in v:
+                if not subclass in self.third_labels:
+                    print(f"Subclass missing! {subclass}")
 
 
     def csv_to_list(self):
@@ -67,9 +74,9 @@ class LoadDataset(Dataset):
     def __getitem__(self, idx):
         '''Returns a single item.
         '''
-        image_path, image, superclass, subclass = None, None, None, None
+        image_path, image, superclass, subclass ,subtwoclass = None, None, None, None, None #add subtwoclass
         if self.return_label:
-            image_path, superclass, subclass = self.data_list[idx]
+            image_path, superclass, subclass ,subtwoclass= self.data_list[idx] #add subtwoclass
         else:
             image_path = self.data_list[idx]
 
@@ -93,6 +100,7 @@ class LoadDataset(Dataset):
                 'image':image/255.0,
                 'label_1': self.coarse_labels.index(superclass.strip(' ')),
                 'label_2': self.fine_labels.index(subclass.strip(' ')),
+                'label_3': self.third_labels.index(subtwoclass.strip(' ')), #add subtwoclass
                 'image_path':image_path
             }
         else:

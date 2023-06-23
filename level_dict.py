@@ -2,11 +2,17 @@
 
 
 hierarchy = {
+    'TFT':['NP','OP','UP','INT'],
+    'CF':['NP','OP','UP']
+}
+
+hierarchy_two = {
     'NP':['CF REPAIR FAIL','PV-HOLE-T','CF DEFECT','CF PS DEFORMATION','AS-RESIDUE-E','ITO-RESIDUE-T','M1-ABNORMAL'],
     'OP':['POLYMER','FIBER','GLASS CULLET','POLYMER'],
     'UP':['PI SPOT-WITH PAR','LIGHT METAL','FIBER','PI SPOT-WITH PAR','POLYMER'],
     'INT' : ['GLASS BROKEN','ESD']
 }
+
 
 
 '''Dictionary for CIFAR-100 hierarchy.

@@ -58,7 +58,7 @@ class ResNet50(nn.Module):
     '''ResNet-50 Architecture.
     '''
 
-    def __init__(self, use_cbam=True, image_depth=3, num_classes=[4,14]):#num_classes=[20,100]
+    def __init__(self, use_cbam=True, image_depth=3, num_classes=[2,4,14]):#三層階層
         '''Params init and build arch.
         '''
         super(ResNet50, self).__init__()
@@ -83,9 +83,11 @@ class ResNet50(nn.Module):
 
         self.linear_lvl1 = nn.Linear(512*self.expansion, num_classes[0]) #線性flatten輸出
         self.linear_lvl2 = nn.Linear(512*self.expansion, num_classes[1])
+        self.linear_lvl3 = nn.Linear(512*self.expansion, num_classes[2]) #add layer3
 
         self.softmax_reg1 = nn.Linear(num_classes[0], num_classes[0])
         self.softmax_reg2 = nn.Linear(num_classes[0]+num_classes[1], num_classes[1])
+        self.softmax_reg3 = nn.Linear(num_classes[0]+num_classes[1]+num_classes[2], num_classes[2]) #add layer3
 
 
 
@@ -114,7 +116,8 @@ class ResNet50(nn.Module):
 
         level_1 = self.softmax_reg1(self.linear_lvl1(x)) # 經過softxmax處理後的模型輸出（機率值）
         level_2 = self.softmax_reg2(torch.cat((level_1, self.linear_lvl2(x)), dim=1))
+        level_3 = self.softmax_reg3(torch.cat((level_1,level_2, self.linear_lvl3(x)), dim=1))# add layer3
 
 
 
-        return level_1, level_2
+        return level_1, level_2 ,level_3
