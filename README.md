@@ -25,8 +25,8 @@ The github form : [Github - Ugenteraan Manogaran][2]
 2. process_dataset.py : 建立train.csv /  test.csv。
 3. level_dic.py : 建立 level_1 與 Level_2 階層字典。
 4. runtime_args.py : 訓練前確認路徑＆相關參數設定。
-5. model/resnet50.py ：num_classes類別數量需要修改。(coarse_label_names個數 & fine_label_names個數)
-6. resize.py : 照片 resize 。
+5. resize.py : 照片 resize 。
+6. model/resnet50.py ：num_classes類別數量需要修改。(coarse_label_names個數 & fine_label_names個數)
 7. DeepHC.py ：模型訓練
 
 ## Data Inference
