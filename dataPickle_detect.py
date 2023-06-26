@@ -52,6 +52,7 @@ def imgDataClean(fileName,dataset,dstroot,typeset,datalen):
         df['FileName']=[fileName]
         df['dataNumber']=str(datalen)
         df['locationFlag']=a[1]
+        df['FMAdefect']=a[0]
         df['dataType']=typeset
         df['picName']=str(fileName)+'_'+img
         datasave(root,df,csvtotalname)
