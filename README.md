@@ -26,11 +26,12 @@ The github form : [Github - Ugenteraan Manogaran][2]
 3. level_dic.py : 建立 level_1 與 Level_2 階層字典。
 4. runtime_args.py : 訓練前確認路徑＆相關參數設定。
 5. resize.py : 照片 resize 。
+    - Traintype = True
 6. model/resnet50.py ：num_classes類別數量需要修改。(coarse_label_names個數 & fine_label_names個數)
 7. DeepHC.py ：模型訓練
 
 ## Data Inference
-1. dataPickle_detect.py : 資料丟入之前先轉換成detect(pickle),照片名稱預先處理（之後這部份可以考慮步用）。
+1. dataPickle_detect.py : 資料丟入之前先轉換成detect(pickle),照片名稱預先處理（之後這部份可以考慮不用）。
     - save detect pickle 轉換在：dataPickle_Transform/pickle_files/detect
     - save detect image 轉換在： dataPickle_Transform/preimages/detect;
 2. process_detect.py:需先將必要的資料父至於對應資料夾中，會產生出一個detect.csv。
@@ -38,6 +39,7 @@ The github form : [Github - Ugenteraan Manogaran][2]
     - image 複製::(dataPickle_Transform/preimages/) 複製貼到 (data/detect_imgs/)。
     - detect.csv : 程式產生儲存在 dataset/。
 3. resize.py : data/detect_imgs 照片記得resize。
+    - Traintype = False
 4. detect.py :  Inference預測，結果dataset/result/detect_predict.csv。
 
 ## .py檔案稍微修改
