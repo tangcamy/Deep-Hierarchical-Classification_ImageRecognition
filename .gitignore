@@ -1,5 +1,6 @@
 
-dataset/model_save.pth
+dataset/FMA_3layer.pth
+dataset/FMA_3layer.pt
 dataset/detect_imgs/**
 dataset/images_cifar/**
 dataset/images/**
