@@ -26,6 +26,7 @@ The github form : [Github - Ugenteraan Manogaran][2]
 3. level_dic.py : 建立 level_1 與 Level_2 與 level_3 階層字典。
 4. runtime_args.py : 訓練前確認路徑＆相關參數設定。
 5. resize.py : 照片 resize 。
+    - Traintype = True
 6. model/resnet50.py ：model 結構原本兩層改成三層。
     - num_classes類別數量需要修改。(coarse_label_names個數 & fine_label_names個數 & third_label_names個數)。
     - 需要新增區域：linear_lvl3 , softmax_reg3 , level_3。
@@ -46,18 +47,27 @@ The github form : [Github - Ugenteraan Manogaran][2]
 
 
 ## Data Inference
-1. dataPickle_detect.py : 資料丟入之前先轉換成 dataset/pickle_files/detect，再轉成 dataset/detect.csv。
-    - 照片需放在 dataset/detect_imgs。
-2. resize.py : 照片記得resize。
-2. detect.py :  Inference預測，結果dataset/result/detect_predict.csv。
+1. dataPickle_detect.py : 資料丟入之前先轉換成detect(pickle),照片名稱預先處理（之後這部份可以考慮不用）。
+    - save detect pickle 轉換在：dataPickle_Transform/pickle_files/detect
+    - save detect image 轉換在： dataPickle_Transform/preimages/detect;
+2. process_detect.py:需先將必要的資料父至於對應資料夾中，會產生出一個detect.csv。
+    - detect pickle 複製:(dataPickle_Transform/pickle_files/) 複製貼到 (data/pickle_files/)。
+    - image 複製::(dataPickle_Transform/preimages/) 複製貼到 (data/detect_imgs/)。
+    - detect.csv : 程式產生儲存在 dataset/。
+3. resize.py : data/detect_imgs 照片記得resize。
+    - Traintype = False
+4. detect.py :  Inference預測，結果dataset/result/detect_predict.csv。
 
 ## .py檔案稍微修改
+### Training-Part
 1. load_dataset.py : 原本retrun_labe（image,label_1,label_2) 新增一個image_path
 2. helper.py:
     - read_meta函示：多一個輸出third_label_names。
 3. level_dict.py:多一個字典。
     - hierarchy:layer_1 & layer_2
     - hierarchy_2:layer_2 & layer_3
+### Inference-Part
+1. dataPickle_detect.py：新增third_label_names
 
 [1]: https://arxiv.org/pdf/2005.06692.pdf "Deep Hierarchical Classification for Category Prediction in E-commerce System"
 [2]:https://github.com/Ugenteraan/Deep_Hierarchical_Classification "Github - Ugenteraan Manogaran"

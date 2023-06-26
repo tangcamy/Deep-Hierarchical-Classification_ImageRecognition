@@ -2,7 +2,7 @@ import cv2
 import os 
 image_size =224
 
-Traintype =True
+Traintype =False
 
 if Traintype:
     image_root ='/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/dataset/images/'

@@ -10,7 +10,7 @@ data root
 '''
 
 rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/detectPicture_0621/'
-projectroot = '/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/'
+projectroot = '/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/'
 root = projectroot+'dataPickle_Transform/'
 pickle_root = root + 'pickel_files/' # save detect pickle
 pickleDataset_root = root + 'preimages/' # save detect preimages
@@ -51,7 +51,9 @@ def imgDataClean(fileName,dataset,dstroot,typeset,datalen):
         df=pd.DataFrame()
         df['FileName']=[fileName]
         df['dataNumber']=str(datalen)
+        df['defectlocate'] = a[2]
         df['locationFlag']=a[1]
+        df['FMAdefect']= a[0]
         df['dataType']=typeset
         df['picName']=str(fileName)+'_'+img
         datasave(root,df,csvtotalname)
@@ -100,8 +102,9 @@ def unpickle(file):
 # In[]
 ''' load meta data '''
 meta_data = unpickle(pickle_root+'meta')
-fine_label_names = meta_data['fine_label_names']
 coarse_label_names = meta_data['coarse_label_names']
+fine_label_names = meta_data['fine_label_names']
+third_label_names = meta_data['third_label_names']
 
 ''' rootPic : rowdata來源( file/ filename)'''
 for i in os.listdir(rootPic):
@@ -118,21 +121,24 @@ for i in os.listdir(rootPic):
 detect_filenames_list=[]
 detect_coarselabels_list=[]
 detect_finelabels_list=[]
+detect_thirdlabels_list=[]
 
 for name in os.listdir(pickledetect_root):
     a = name.split('_') #a[0]=CF REPAIR FAIL@NP@CF@CF ; a[1]= 20220816 ; a[2]=B76V2XE-1-3.jpg
     imgclassification = a[0]
     b = Nameselect(imgclassification) 
     detect_filenames_list.append(name)
-    detect_coarselabels_list.append(coarse_label_names.index(b[1])) #locationflag
-    detect_finelabels_list.append(fine_label_names.index(b[0])) #defectname
+    detect_coarselabels_list.append(coarse_label_names.index(b[2])) #defectlocate ,TFT&CF 
+    detect_finelabels_list.append(fine_label_names.index(b[1])) #LocateFlog, NP UP OP INT
+    detect_thirdlabels_list.append(third_label_names.index(b[0]))# FMA Defect
     #print(name)
 
 '''# 存資料'''
 detect = {
 'filenames': detect_filenames_list,
+'coarse_labels':detect_coarselabels_list,
 'fine_labels':detect_finelabels_list,
-'coarse_labels':detect_coarselabels_list
+'trhid_labels':detect_thirdlabels_list
 }
 os.chdir(pickle_root)
 with open('detect','wb') as file:# 'meta.pickle'

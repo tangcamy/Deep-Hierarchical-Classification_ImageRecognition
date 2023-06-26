@@ -24,7 +24,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == '
 
 '''mdoelsave.pth location'''
 os.chdir(args.model_save_path)
-modelName = 'FMA_224224.pth'
+modelName = 'FMA_3layer.pth'
 
 ''' Mode read'''
 model = resnet50.ResNet50()

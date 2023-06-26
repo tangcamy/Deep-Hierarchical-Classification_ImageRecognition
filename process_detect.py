@@ -14,8 +14,8 @@ class Preprocess_detect:
     '''Process the detedt pickle files.
         image_write_dir : dataset/detect_imgs
     '''
-    def __init__(self, meta_filename='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/meta',detect_file='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/detect',
-                        image_write_dir='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/', csv_write_dir='/home/orin/L5C_CellFMA/Deep-Hierarchical-Classification_ImageRecognition/dataset/', detect_csv_filename='detect.csv'):
+    def __init__(self, meta_filename='/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/meta',detect_file='/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/dataset/pickle_files/detect',
+                        image_write_dir='/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/', csv_write_dir='/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/dataset/', detect_csv_filename='detect.csv'):
         '''Init params.
         '''
         self.meta_filename = meta_filename
@@ -32,7 +32,7 @@ class Preprocess_detect:
             
         #--原本的會有問題--#
         #self.coarse_label_names, self.fine_label_names = read_meta(meta_filename=self.meta_filename)
-        self.coarse_label_names, self.fine_label_names = read_meta(self.meta_filename)
+        self.coarse_label_names, self.fine_label_names ,self.third_label_names = read_meta(self.meta_filename)
 
 
 
@@ -44,8 +44,11 @@ class Preprocess_detect:
         pickle_file = unpickle(self.detect_file)
 
         filenames = pickle_file['filenames']#[t.decode('utf8') for t in pickle_file[b'filenames']]
-        fine_labels = pickle_file['fine_labels']#pickle_file[b'fine_labels']
         coarse_labels = pickle_file['coarse_labels']#pickle_file[b'coarse_labels']
+        fine_labels = pickle_file['fine_labels']#pickle_file[b'fine_labels']
+        fine_labels = pickle_file['fine_labels']#pickle_file[b'fine_labels']
+        third_labels = pickle_file['trhid_labels']#pickle_file[b'fine_labels']
+        
         #data = pickle_file[b'data']
 
         '''
@@ -67,11 +70,13 @@ class Preprocess_detect:
                 filename = filenames[i]
                 coarse_label = self.coarse_label_names[coarse_labels[i]]
                 fine_label = self.fine_label_names[fine_labels[i]]
+                third_label = self.third_label_names[third_labels[i]]
+
                 #imageio.imsave(f'{self.image_write_dir}{filename}', image)
                 c=c+1
                 #print('count:'+str(c))
                 print(f'{self.image_write_dir}{filename}')
-                f.write(f'{self.image_write_dir}{filename}, {coarse_label}, {fine_label}\n')
+                f.write(f'{self.image_write_dir}{filename}, {coarse_label}, {fine_label},{third_label}\n')
 
 
 
