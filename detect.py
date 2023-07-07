@@ -13,6 +13,8 @@ from load_dataset import LoadDataset
 from helper import read_meta
 from urllib.request import urlopen
 
+csv_save_filename="detect_predict.csv"
+
 def makedirs(path):
     try:
         os.makedirs(path)
@@ -125,6 +127,6 @@ dfsave = dfsave.loc[~index_duplicates]
 #dfsave.reset_index(drop=True,inplace=True)
 
 makedirs(args.model_save_path+'result/')
-dfsave.to_csv(args.model_save_path+'result/detect_predict.csv',index=True,index_label='ImagePath')
-print('data_save:'+args.model_save_path+'detect_predict.csv')
+dfsave.to_csv(args.model_save_path+'result/'+csv_save_filename,index=True,index_label='ImagePath')
+print('data_save:'+args.model_save_path+'result/'+csv_save_filename)
 
