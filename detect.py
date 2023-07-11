@@ -13,7 +13,7 @@ from load_dataset import LoadDataset
 from helper import read_meta
 from urllib.request import urlopen
 
-csv_save_filename="detect_predict.csv"
+csv_save_filename="Test2.csv"
 
 def makedirs(path):
     try:

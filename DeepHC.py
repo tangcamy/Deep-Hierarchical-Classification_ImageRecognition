@@ -85,6 +85,7 @@ test_epoch_loss = []
 test_epoch_superclass_accuracy = []
 test_epoch_subclass_accuracy = []
 test_epoch_subtwoclass_accuracy = []
+train_acc = 0
 
 #----- training 
 for epoch_idx in range(args.epoch):
@@ -177,9 +178,14 @@ for epoch_idx in range(args.epoch):
     print(f'Testing Subclass accuracy at epoch {epoch_idx} : {sum(epoch_subclass_accuracy)/(j+1)}')
     print(f'Testing Subtwoclass accuracy at epoch {epoch_idx} : {sum(epoch_subtwoclass_accuracy)/(j+1)}')
     print('-------------------------------------------------------------------------------------------')
+    if train_acc < sum(epoch_subtwoclass_accuracy)/(j+1):
+        train_acc = sum(epoch_subtwoclass_accuracy)/(j+1)
+        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_101_{}.pth'.format(epoch_idx))
+        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_101_{}.pt'.format(epoch_idx))
+        print("Model saved!")
 
-    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer.pth')
-    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer.pt')
+    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_final101.pth')
+    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_final101.pt')
     print("Model saved!")
     
     

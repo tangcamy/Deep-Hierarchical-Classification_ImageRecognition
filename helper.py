@@ -5,7 +5,7 @@ import pickle
 import torch
 
 def unpickle(file):
-    '''Unpickle the given file
+    '''Unpickle the givensfile
     '''
 
     with open(file, 'rb') as f:

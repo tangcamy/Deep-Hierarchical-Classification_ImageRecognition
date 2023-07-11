@@ -9,7 +9,7 @@ import shutil
 data root
 '''
 
-rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/detectPicture_0621/'
+rootPic = '/home/orin/L5C_CellFMA/CELL_FMADefect_C2/original_pic/TestPicture_2/'#detectPicture_0621
 projectroot = '/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/'
 root = projectroot+'dataPickle_Transform/'
 pickle_root = root + 'pickel_files/' # save detect pickle
