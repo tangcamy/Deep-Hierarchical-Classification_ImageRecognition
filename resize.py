@@ -1,6 +1,6 @@
 import cv2
 import os 
-image_size =224
+image_size =160
 
 Traintype =False
 

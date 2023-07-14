@@ -1,6 +1,9 @@
 
-dataset/FMA_3layer.pth
-dataset/FMA_3layer.pt
+dataset/FMA_3layer_50.pth
+dataset/FMA_3layer_50.pt
+dataset/FMA_3layer_101.pth
+dataset/FMA_3layer_101.pt
+dataset/FMA_3layer_final101.pt
 dataset/detect_imgs/**
 dataset/images_cifar/**
 dataset/images/**

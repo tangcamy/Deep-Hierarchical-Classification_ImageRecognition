@@ -66,6 +66,8 @@ The github form : [Github - Ugenteraan Manogaran][2]
 3. level_dict.py:多一個字典。
     - hierarchy:layer_1 & layer_2
     - hierarchy_2:layer_2 & layer_3
+4. resnet50.py:模型架構修改Resnet50 或 Resnet101.
+    - self.num_blocks的部份調整。
 ### Inference-Part
 1. dataPickle_detect.py：新增third_label_names
 

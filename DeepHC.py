@@ -180,8 +180,9 @@ for epoch_idx in range(args.epoch):
     print('-------------------------------------------------------------------------------------------')
     if train_acc < sum(epoch_subtwoclass_accuracy)/(j+1):
         train_acc = sum(epoch_subtwoclass_accuracy)/(j+1)
-        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_101_{}.pth'.format(epoch_idx))
-        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_101_{}.pt'.format(epoch_idx))
+        best_epoch = epoch_idx
+        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_101.pth')
+        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_101.pt')
         print("Model saved!")
 
     torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_final101.pth')
@@ -251,6 +252,8 @@ for epoch_idx in range(args.epoch):
     #plt.show()
     plt.clf()
     print('picture save done  start next epoch')
+
+    print('The best Epoch model:'+str(best_epoch))
 
 
 
