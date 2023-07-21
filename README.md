@@ -75,4 +75,4 @@ The github form : [Github - Ugenteraan Manogaran][2]
 
 
 ### draw cbam
-1. cam.py:
+1. cam.py:exekj
