@@ -102,7 +102,7 @@ for i in os.listdir(rootPic):
         if len(fileList)>=80:
             print('ok')
             print('------------Data:'+str(i))
-            cutNumber = int(len(fileList)*0.8)
+            cutNumber = int(len(fileList)*0.9)
             trainData = fileList[0:cutNumber]
             testData = fileList[cutNumber:]
 
@@ -157,12 +157,12 @@ for name in os.listdir(pickleTrain_root):
     a = name.split('_') #a[0]=CF REPAIR FAIL@NP@CF@CF ; a[1]= 20220816 ; a[2]=B76V2XE-1-3.jpg
     imgclassification = a[0]
     b = Nameselect(imgclassification) 
-    print(b)
+    #print(b)
     train_filenames_list.append(name)
     train_coarselabels_list.append(coarse_label_names.index(b[2])) #defectlocate ,TFT&CF 
     train_finelabels_list.append(fine_label_names.index(b[1])) #LocateFlog, NP UP OP INT
     train_thirdlabels_lsit.append(third_label_names.index(b[0]))# FMA Defect
-    print(name)
+    #print(name)
 
 '''# 存資料'''
 train = {

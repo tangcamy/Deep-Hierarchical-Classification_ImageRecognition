@@ -17,7 +17,7 @@ parser.add_argument('--learning_rate', type=float, help='Specify the batch size 
 parser.add_argument('--dropout_rate', type=float, help='Specify the dropout rate to be used during training.', default=0.5)
 parser.add_argument('--num_workers', type=int, help='Specify the number of workers to be used to load the data.', default=4)
 parser.add_argument('--no_shuffle', help='Use this flag to disable shuffling during data loading', action='store_false')
-parser.add_argument('--img_size', type=int, help='Specify the size of the input image.', default=160)#32
+parser.add_argument('--img_size', type=int, help='Specify the size of the input image.', default=224)#32
 parser.add_argument('--img_depth', type=int, help='Specify the depth of the input image.', default=3)
 parser.add_argument('--device', type=str, help='Specify which device to be used for the evaluation. Either "cpu" or "gpu".', default='gpu')
 

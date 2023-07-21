@@ -13,7 +13,7 @@ from load_dataset import LoadDataset
 from helper import read_meta
 from urllib.request import urlopen
 
-csv_save_filename="Test101.csv"
+csv_save_filename="Test_final50_91.csv"
 
 def makedirs(path):
     try:
@@ -26,7 +26,7 @@ device = torch.device("cuda:0" if torch.cuda.is_available() and args.device == '
 
 '''mdoelsave.pth location'''
 os.chdir(args.model_save_path)
-modelName = 'FMA_3layer_101.pth'
+modelName = 'FMA_3layer_50_9-1.pth'
 
 ''' Mode read'''
 model = resnet50.ResNet50()

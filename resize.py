@@ -1,6 +1,6 @@
 import cv2
 import os 
-image_size =160
+image_size = 224 #160:for 101 ; 224 for 50 
 
 Traintype =False
 
@@ -11,10 +11,11 @@ else:
     detect_root ='/home/orin/L5C_CellFMA/D3_Deep-Hierarchical-Classification_ImageRecognition/dataset/detect_imgs/'
     root = detect_root
 
-
 os.chdir(root)
 for imgname in os.listdir(root):
     image = cv2.imread(imgname)
     imageresize = cv2.resize(image, (image_size,image_size))
     cv2.imwrite(imgname,imageresize)
     print(imgname)
+
+
