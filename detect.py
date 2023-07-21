@@ -13,7 +13,7 @@ from load_dataset import LoadDataset
 from helper import read_meta
 from urllib.request import urlopen
 
-csv_save_filename="Test_final50_91.csv"
+csv_save_filename="Test_final50_91_result.csv"
 
 def makedirs(path):
     try:
