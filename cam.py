@@ -12,7 +12,7 @@ import torch.nn as nn
 import matplotlib.pyplot as plt
 
 # 获取模型输出的feature/score
-class_num = 14
+class_num = 14 #class
 
 modelName = 'FMA_3layer_50.pth'
 device = torch.device("cuda:0" if torch.cuda.is_available() else 'cpu')
