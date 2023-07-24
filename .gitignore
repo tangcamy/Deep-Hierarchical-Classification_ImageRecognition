@@ -4,6 +4,10 @@ dataset/FMA_3layer_50.pt
 dataset/FMA_3layer_101.pth
 dataset/FMA_3layer_101.pt
 dataset/FMA_3layer_final101.pt
+dataset/FMA_3layer_cbam_final101_9-1.pt
+dataset/FMA_3layer_cbam_final101_9-1.pth
+dataset/FMA_3layer_cbam_best101_9-1.pt
+dataset/FMA_3layer_cbam_best101_9-1.pth
 dataset/FMA_3layer_50_9-1.pt
 dataset/FMA_3layer_50_9-1.pth
 dataset/FMA_3layer_50_cbam.pt

@@ -65,8 +65,8 @@ class ResNet50(nn.Module):
 
         self.in_channels = 64 
         self.expansion = 4
-        self.num_blocks = [3, 4, 6, 3] #Resnet 50
-        #self.num_blocks = [3, 4, 23, 3] #Resnet 101
+        #self.num_blocks = [3, 4, 6, 3] #Resnet 50
+        self.num_blocks = [3, 4, 23, 3] #Resnet 101
         #in_channels:輸入通道數  ; out_channels:輸出通道數(可隨意定義)
         #權重的shape為in_ch * kernelsize(3*3)
         #權重張量(tensor)完整大小:out_ch x in_ch x kernelsize(3x3) = 3*64*3* 3

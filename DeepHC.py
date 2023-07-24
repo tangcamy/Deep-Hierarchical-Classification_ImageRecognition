@@ -181,12 +181,12 @@ for epoch_idx in range(args.epoch):
     if train_acc < sum(epoch_subtwoclass_accuracy)/(j+1):
         train_acc = sum(epoch_subtwoclass_accuracy)/(j+1)
         best_epoch = epoch_idx
-        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer__best_50_9-1.pth')
-        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer__best_50_9-1.pt')
+        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer__best101_9-1.pth')
+        torch.save(model.state_dict(), args.model_save_path+'FMA_3layer__best101_9-1.pt')
         print("Model saved!")
 
-    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_50_9-1.pth')
-    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_50_9-1.pt')
+    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_final101_9-1.pth')
+    torch.save(model.state_dict(), args.model_save_path+'FMA_3layer_final101_9-1.pt')
     print("Model saved!")
     
     
